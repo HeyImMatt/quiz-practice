@@ -9,14 +9,16 @@ $(document).ready(function(){
     if (totalPoints > 6) {
       friend = "Hermione"
       $("#Hermione").removeClass("hidden");
+      $("#Ginny, #Ron").addClass("hidden");
     } else if (totalPoints <= 6 && totalPoints > 3) {
       friend = "Ginny"
       $("#Ginny").removeClass("hidden");
+      $("#Hermione, #Ron").addClass("hidden");
     } else {
       friend = "Ron"
       $("#Ron").removeClass("hidden");
+      $("#Hermione, #Ginny").addClass("hidden");
     }
     $("#resultFriend").removeClass("hidden");
-    console.log(totalPoints, friend)
   });
 });
