@@ -12,74 +12,93 @@
 </head>
 <body>
   <div class="container">
-    <h1>Who is your Hogwarts Best Friend?</h1>
-    <p>Take this quiz to find out who your best friend would be!</p>
-    <form class="form-horizontal" id="hogwartsQuiz">
-      <div class="form-group">
-        <h5>What is your favorite color?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favColor" value="1" checked>
-            Red
-          </label>
+    <row>
+      <h1>Who is your Hogwarts Best Friend?</h1>
+      <p>Take this quiz to find out who your best friend would be!</p>
+      <form class="form-horizontal col-md-6" id="hogwartsQuiz">
+        <div class="form-group">
+          <h5>What is your favorite color?</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favColor" value="1" checked>
+              Red
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favColor" value="2">
+              Blue
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favColor" value="3">
+              Green
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favColor" value="2">
-            Blue
-          </label>
+        <div class="form-group">
+          <h5>What is your favorite animal?</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favAnimal" value="1" checked>
+              Owl
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favAnimal" value="2">
+              Snake
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favAnimal" value="3">
+              Deer
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favColor" value="3">
-            Green
-          </label>
+        <div class="form-group">
+          <h5>What is your favorite drink?</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favDrink" value="1" checked>
+              Butterbeer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favDrink" value="2">
+              Firewhiskey
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favDrink" value="3">
+              Pumpkin Juice
+            </label>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="col-md-6">
+        <div id="resultFriend" class="hidden">
+          <h3>Your best friend is...</h3>
+          <div id="Hermione" class="hidden">
+            <h4>Hermione</h4>
+            <img src="photos/Hermione.jpeg" alt="Photo of Hermione">
+          </div>
+          <div id="Ginny" class="hidden">
+            <h4>Ginny</h4>
+            <img src="photos/Ginny.jpg" alt="Photo of Ginny">
+          </div>
+          <div id="Ron" class="hidden">
+            <h4>Ron</h4>
+            <img src="photos/Ron.jpg" alt="Photo of Ron">
+          </div>
         </div>
       </div>
-      <div class="form-group">
-        <h5>What is your favorite animal?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favAnimal" value="1" checked>
-            Owl
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favAnimal" value="2">
-            Snake
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favAnimal" value="3">
-            Deer
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <h5>What is your favorite drink?</h5>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favDrink" value="1" checked>
-            Butterbeer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favDrink" value="2">
-            Firewhiskey
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="favDrink" value="3">
-            Pumpkin Juice
-          </label>
-        </div>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    </row>
   </div>
 </body>
 </html>
